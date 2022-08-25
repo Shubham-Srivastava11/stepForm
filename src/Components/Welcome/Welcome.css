@@ -1,0 +1,37 @@
+.welcomeForm {
+    margin: auto;
+    width: 400px;
+    transition: .5s;
+}
+
+label {
+    float: left;
+    opacity: .8;
+    margin: 8px 0 8px;
+    font-weight: 700;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .welcomeForm {
+        width: 60%;
+        transition: .5s;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .welcomeForm {
+        width: 95%;
+        transition: .5s;
+    }
+}

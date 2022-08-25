@@ -1,0 +1,34 @@
+.card {
+    width: 180px;
+    height: 150px;
+    border-radius: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.653);
+    margin: auto;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.clicked {
+    border: 2px solid rgb(72, 20, 124);
+}
+
+.fill {
+    color: rgb(72, 20, 124);
+}
+
+.card h3,
+.card h5 {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.card h5 {
+    opacity: .7;
+}
+
+.icon {
+    margin: 10px;
+    font-size: 20px;
+}

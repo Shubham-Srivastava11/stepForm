@@ -1,0 +1,9 @@
+.usageForm {
+    margin: auto;
+    width: 400px;
+    transition: .5s;
+}
+
+.innerCard {
+    display: flex;
+}
