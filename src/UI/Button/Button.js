@@ -10,7 +10,8 @@ const Button = (props) => {
         <button
             key={props.id}
             type="submit"
-            onClick={handleClick}>
+            onClick={handleClick}
+            disabled={props.isDisabled}>
             {props.name}
 
         </button>

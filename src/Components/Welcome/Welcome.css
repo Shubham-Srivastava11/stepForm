@@ -22,12 +22,12 @@ select {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .welcomeForm {
-        width: 60%;
+        width: 80%;
         transition: .5s;
     }
-}
+} */
 
 @media screen and (max-width: 450px) {
     .welcomeForm {

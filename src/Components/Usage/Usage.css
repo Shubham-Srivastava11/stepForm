@@ -7,3 +7,10 @@
 .innerCard {
     display: flex;
 }
+
+@media screen and (max-width: 450px) {
+    .usageForm {
+        width: 95%;
+        transition: .5s;
+    }
+}

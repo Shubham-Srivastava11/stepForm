@@ -3,3 +3,10 @@
     width: 400px;
     transition: .5s;
 }
+
+@media screen and (max-width: 450px) {
+    .finalScreen {
+        width: 95%;
+        transition: .5s;
+    }
+}

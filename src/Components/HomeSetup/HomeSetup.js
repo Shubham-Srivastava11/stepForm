@@ -1,8 +1,22 @@
 import './HomeSetup.css';
 import Headers from '../../UI/Headers/Headers';
-import Button from '../../UI/Button/Button';
+import { useSelector, useDispatch } from 'react-redux';
+import { updateFormData } from '../../store/formDataSlice';
+
 
 const HomeSetup = () => {
+
+    const dispatch = useDispatch();
+
+    const formData = useSelector(store => store.formData)
+
+    const handleFormChange = (event) => {
+        dispatch(updateFormData({
+            value: event.target.value,
+            name: event.target.name
+        }))
+    }
+
     return (
         <div>
             <form className="homeForm">
@@ -15,19 +29,28 @@ const HomeSetup = () => {
                     <label>
                         Workspace Name
                     </label>
-                    <input type="text" placeholder="Eden" required />
+                    <input
+                        name='workspaceName'
+                        type="text"
+                        placeholder="Eden"
+                        value={formData.workspaceName}
+                        onChange={handleFormChange}
+                    />
 
                 </div>
                 <div>
                     <label>
                         Workspace URL <span>(Optional)</span>
                     </label>
-                    <input type="text" placeholder="www.eden.com" required />
+                    <input
+                        name='workspaceURL'
+                        type="text"
+                        placeholder="www.eden.com"
+                        value={formData.workspaceURL}
+                        onChange={handleFormChange}
+                    />
 
                 </div>
-                {/* <Button
-                    id='HomeSetup'
-                    name="Create Workspace" /> */}
             </form>
         </div>
     )

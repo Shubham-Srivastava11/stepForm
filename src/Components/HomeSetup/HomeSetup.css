@@ -7,3 +7,10 @@
 span {
     opacity: .8;
 }
+
+@media screen and (max-width: 450px) {
+    .homeForm {
+        width: 95%;
+        transition: .5s;
+    }
+}

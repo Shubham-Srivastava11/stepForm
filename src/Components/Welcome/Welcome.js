@@ -1,15 +1,20 @@
 import './Welcome.css';
-import Button from '../../UI/Button/Button';
 import Headers from '../../UI/Headers/Headers';
+import { useSelector, useDispatch } from 'react-redux';
+import { updateFormData } from '../../store/formDataSlice';
 
 const Welcome = () => {
 
-    const handleName = (event) => {
-        if (event.target.value.length === 0)
-            localStorage.setItem('Name', '');
-        localStorage.setItem('Name', event.target.value);
-    };
+    const dispatch = useDispatch();
 
+    const formData = useSelector(store => store.formData)
+
+    const handleFormChange = (event) => {
+        dispatch(updateFormData({
+            value: event.target.value,
+            name: event.target.name
+        }))
+    }
     return (
         <div className="welcomeForm">
             <Headers
@@ -21,19 +26,28 @@ const Welcome = () => {
                     <label>
                         Full Name
                     </label>
-                    <input type="text" placeholder="Steve Jobs" required />
+                    <input
+                        name='fullName'
+                        type="text"
+                        placeholder="Steve Jobs"
+                        value={formData.fullName}
+                        onChange={handleFormChange}
+                    />
 
                 </div>
                 <div>
                     <label>
                         Display Name
                     </label>
-                    <input type="text" placeholder="Steve" onChange={handleName} required />
+                    <input
+                        name='dpName'
+                        type="text"
+                        placeholder="Steve"
+                        value={formData.dpName}
+                        onChange={handleFormChange}
+                    />
 
                 </div>
-                {/* <Button
-                    id='Welcome'
-                    name="Create Workspace" /> */}
             </form>
         </div>
     )

@@ -6,13 +6,19 @@
     /* margin-bottom: -5px; */
     overflow: hidden;
     padding: 5px;
+    cursor: pointer;
+}
+
+.step:hover {
+    background-color: rgba(72, 20, 124, 0.134);
+    color: black;
 }
 
 #file {
     width: 90px;
     /* margin: 20px; */
-    margin-top: 15px;
-    height: 6px;
+    margin-top: 17px;
+    height: 3px;
     overflow: hidden;
     color: rgb(72, 20, 124);
     /* border-color: white; */
@@ -23,6 +29,8 @@
     color: white;
 }
 
-.margin {
-    /* margin-inline-start: 25%; */
-}
+/* @media screen and (max-width: 450px) {
+    #file {
+        width: 70px;
+    }
+} */

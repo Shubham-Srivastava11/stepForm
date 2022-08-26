@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 400px;
+  margin: auto;
 }
 
 .App-logo {
@@ -57,6 +59,6 @@
 
 .stepTrack {
   display: flex;
-  margin: auto;
+  margin: 20px auto;
   width: 400px;
 }

@@ -2,7 +2,6 @@ import './Usage.css';
 import Headers from '../../UI/Headers/Headers';
 import Card from '../../UI/Card/Card';
 import { BsFillPersonFill, BsFillPeopleFill } from "react-icons/bs";
-import Button from '../../UI/Button/Button';
 
 const Usage = () => {
     return (
@@ -22,9 +21,6 @@ const Usage = () => {
                         head="With my team"
                         content="Wikis, docs, tasks & projects, all in love place." />
                 </div>
-                {/* <Button
-                    id='Usage'
-                    name="Create Workspace" /> */}
             </form>
         </div>
     )

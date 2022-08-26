@@ -10,7 +10,7 @@ const Card = (props) => {
     }
     return (
         <div className={`card ${isClicked ? 'clicked' : ''}`} onClick={handleClick} >
-            <props.type className={`icon ${isClicked ? 'fill' : ''}`} />
+            <props.type className={`icon ${isClicked ? 'iconfill' : ''}`} />
             <h3>{props.head}</h3>
             <h5>{props.content}</h5>
         </div >
