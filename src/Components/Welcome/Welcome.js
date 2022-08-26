@@ -21,14 +21,14 @@ const Welcome = () => {
                     <label>
                         Full Name
                     </label>
-                    <input type="text" placeholder="Steve Jobs" />
+                    <input type="text" placeholder="Steve Jobs" required />
 
                 </div>
                 <div>
                     <label>
                         Display Name
                     </label>
-                    <input type="text" placeholder="Steve" onChange={handleName} />
+                    <input type="text" placeholder="Steve" onChange={handleName} required />
 
                 </div>
                 {/* <Button

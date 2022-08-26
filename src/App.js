@@ -8,6 +8,7 @@ import Usage from './Components/Usage/Usage';
 import FinalScreen from './Components/FinalScreen/FinalScreen';
 import Button from './UI/Button/Button';
 import React, { useEffect, useState } from 'react';
+import ProgressBar from './Components/ProgressBar/ProgressBar';
 
 function App() {
   // const [stepProgress, setStepProgress] = useState([
@@ -80,7 +81,13 @@ function App() {
       >
       </div>
 
-      <progress id="file" value={stepProgress * 25} max="100">  </progress>
+      <div className='stepTrack'>
+        <ProgressBar
+          progress={stepProgress} />
+      </div>
+
+      {/* <progress id="file" value={(stepProgress * 25)} max="100"></progress> */}
+
 
 
       {/* {stepProgress.map((key) => {
@@ -106,8 +113,6 @@ function App() {
           </React.Fragment>
         )
       })}
-
-
       {stepProgress === 4 ?
         <Button
           clickHandler={handleClick}
@@ -119,8 +124,6 @@ function App() {
           id={stepProgress}
           name="Create Workspace" />
       }
-
-
     </div>
   );
 }

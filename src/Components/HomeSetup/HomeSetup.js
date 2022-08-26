@@ -15,14 +15,14 @@ const HomeSetup = () => {
                     <label>
                         Workspace Name
                     </label>
-                    <input type="text" placeholder="Eden" />
+                    <input type="text" placeholder="Eden" required />
 
                 </div>
                 <div>
                     <label>
                         Workspace URL <span>(Optional)</span>
                     </label>
-                    <input type="text" placeholder="www.eden.com" />
+                    <input type="text" placeholder="www.eden.com" required />
 
                 </div>
                 {/* <Button

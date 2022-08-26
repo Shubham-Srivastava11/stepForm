@@ -46,8 +46,17 @@
 
 }
 
-#file {
-  width: 400px;
+/* #file {
+  width: 50px;
   margin: 20px;
-  height: 5px;
+  margin-top: 10px;
+  height: 6px;
+  overflow: hidden;
+} */
+
+
+.stepTrack {
+  display: flex;
+  margin: auto;
+  width: 400px;
 }
