@@ -4,6 +4,9 @@ import Card from '../../UI/Card/Card';
 import { BsFillPersonFill, BsFillPeopleFill } from "react-icons/bs";
 
 const Usage = () => {
+
+
+
     return (
         <div>
             <form className="usageForm">
@@ -15,11 +18,13 @@ const Usage = () => {
                     <Card
                         type={BsFillPersonFill}
                         head="For myself"
-                        content="Write better. Think more clearly. Stay organized." />
+                        content="Write better. Think more clearly. Stay organized."
+                        user='me' />
                     <Card
                         type={BsFillPeopleFill}
                         head="With my team"
-                        content="Wikis, docs, tasks & projects, all in love place." />
+                        content="Wikis, docs, tasks & projects, all in love place."
+                        user='team' />
                 </div>
             </form>
         </div>

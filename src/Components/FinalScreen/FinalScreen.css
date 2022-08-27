@@ -4,6 +4,13 @@
     transition: .5s;
 }
 
+#check,
+#close {
+    margin: 15px;
+    font-size: 50px;
+    color: rgb(72, 20, 124);
+}
+
 @media screen and (max-width: 450px) {
     .finalScreen {
         width: 95%;
