@@ -27,7 +27,8 @@ const ProgressBar = (props) => {
                                 max="100">
 
                             </progress>
-                            : <></>
+                            :
+                            <></>
                         }
                     </React.Fragment >
                 )

@@ -3,7 +3,6 @@
     width: 20px;
     border: 2px solid rgb(72, 20, 124);
     border-radius: 50%;
-    /* margin-bottom: -5px; */
     overflow: hidden;
     padding: 5px;
     cursor: pointer;
@@ -16,21 +15,13 @@
 
 #file {
     width: 90px;
-    /* margin: 20px; */
     margin-top: 17px;
     height: 3px;
     overflow: hidden;
     color: rgb(72, 20, 124);
-    /* border-color: white; */
 }
 
 .fill {
     background-color: rgb(72, 20, 124);
     color: white;
 }
-
-/* @media screen and (max-width: 450px) {
-    #file {
-        width: 70px;
-    }
-} */

@@ -16,24 +16,26 @@ const FinalScreen = () => {
     return (
         <div className='finalScreen'>
 
-            {areTruthy ?
-                <>
-                    <AiFillCheckCircle
-                        id='check' />
-                    <Headers
-                        header={`Congratulations, ${formData.dpName}!`}
-                        subHeader="You have completed onboarding, you can start using the Eden!"
-                    />
-                </>
-                :
-                <>
-                    <AiOutlineCloseCircle
-                        id='close' />
-                    <Headers
-                        header={`Error!!`}
-                        subHeader="Please complete the form first."
-                    />
-                </>}
+            {
+                areTruthy ?
+                    <>
+                        <AiFillCheckCircle
+                            id='check' />
+                        <Headers
+                            header={`Congratulations, ${formData.dpName}!`}
+                            subHeader="You have completed onboarding, you can start using the Eden!"
+                        />
+                    </>
+                    :
+                    <>
+                        <AiOutlineCloseCircle
+                            id='close' />
+                        <Headers
+                            header={`Error!!`}
+                            subHeader="Please complete the form first."
+                        />
+                    </>
+            }
 
         </div>
     )
